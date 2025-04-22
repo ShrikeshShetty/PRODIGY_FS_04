@@ -1,0 +1,144 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  color: #65676b;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-icon-link:hover {
+  color: #1877f2;
+  background-color: #f0f2f5;
+}
+
+.nav-text {
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-link {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar-link:first-child {
+  background-color: #e4e6eb;
+  color: #050505;
+}
+
+.navbar-link:last-child {
+  background-color: #1877f2;
+  color: white;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  border-radius: 20px;
+  padding: 0 10px;
+  flex: 0 1 300px;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.notification-icon {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ed4956;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.logout-button {
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+
+  .search-form {
+    display: none;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .navbar-icon-link {
+    margin: 0 5px;
+  }
+}

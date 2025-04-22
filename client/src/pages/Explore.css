@@ -1,0 +1,85 @@
+.explore-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.explore-tabs {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #65676b;
+}
+
+.tab-button:hover {
+  background-color: #f0f2f5;
+}
+
+.tab-button.active {
+  color: #1877f2;
+  border-bottom: 2px solid #1877f2;
+}
+
+.search-heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.explore-content {
+  margin-top: 20px;
+}
+
+.users-section,
+.posts-section {
+  margin-bottom: 30px;
+}
+
+.users-section h2,
+.posts-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.loading-container,
+.error-container,
+.no-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.loading-container {
+  color: #65676b;
+}
+
+.error-container {
+  color: #ed4956;
+}
+
+.no-content {
+  color: #65676b;
+}

@@ -1,0 +1,68 @@
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.user-card:hover {
+  background-color: #f0f2f5;
+}
+
+.user-card-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #65676b;
+}
+
+.follow-button {
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.follow-button:not(.following) {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+}
+
+.follow-button.following {
+  background-color: transparent;
+  color: #1c1e21;
+  border: 1px solid #dddfe2;
+}
+
+.follow-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.follow-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
